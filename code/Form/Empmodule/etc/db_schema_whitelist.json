@@ -1,0 +1,21 @@
+{
+    "details_of_employee": {
+        "column": {
+            "entity_id": true,
+            "emp_id": true,
+            "emp_firstname": true,
+            "emp_lastname": true,
+            "emp_emailid": true,
+            "company_name": true,
+            "dept_name": true,
+            "occupation": true,
+            "mob_no": true,
+            "address": true,
+            "joindate": true,
+            "dateofbirth": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

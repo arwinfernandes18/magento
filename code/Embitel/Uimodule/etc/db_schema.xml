@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+   <table name="uimodule_table" resource="default" engine="innodb" comment="Ui Module Table">
+       
+     <column xsi:type="int" name="id" unsigned="true" nullable="false" identity="true" comment="UIMODULE ID"/>
+     
+     <column xsi:type="varchar" name="ui_id"  length="255" nullable="true" comment="Ui id"/>
+     <column xsi:type="varchar" name="Fullname" length="255" nullable="true" comment="Fullname"/>
+     <column xsi:type="varchar" name="Occupation" length="255" nullable="true" comment="Occupation"/>
+     <column xsi:type="varchar" name="Qualification" length="255" nullable="true" comment="Qualification"/>
+     <constraint xsi:type="primary" referenceId="PRIMARY">
+         <column name="uimodule_id" />
+     </constraint>
+   </table>
+</schema>

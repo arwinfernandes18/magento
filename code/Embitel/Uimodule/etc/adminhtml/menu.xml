@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    <add id="Embitel_Uimodule::uimodule" title="Uimodule" translate="title" 
+    module="Embitel_Uimodule" sortOrder="100" 
+    action="uimodule/uimodule"
+     resource="Embitel_Uimodule::Uimodule"/>
+    </menu>
+</config>

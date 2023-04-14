@@ -1,0 +1,34 @@
+<?php 
+$test=$block->getArticles();
+?><table border=3>
+    <tr>
+        <th>Employee ID</th>
+        <th>EmployeeFirst Name</th>
+        <th>Employee Last Name</th>
+        <th>Employee Email Id Address</th>
+        <th>Employee Company Name</th>
+        <th>Department</th>
+        <th>Occupation</th>
+        <th>Employee Mobile Number</th>
+        <th>Employee Address</th>
+        <th>Employee Date of Joining</th>
+        <th>Employee Date of birth</th>
+</tr>
+<?php
+foreach($test as $data):
+?>
+<tr>
+    <td><?php echo $data->getEmp_id(); ?></td>
+    <td><?php echo $data->getemp_frstname(); ?></td>
+    <td><?php echo $data->getemp_lastname(); ?></td>
+    <td><?php echo $data->getemailid(); ?></td>
+    <td><?php echo $data->getcompany_name(); ?></td>
+    <td><?php echo $data->getdept_name(); ?></td>
+    <td><?php echo $data->getoccupation(); ?></td>
+    <td><?php echo $data->getmob_no(); ?></td>
+    <td><?php echo $data->getaddress(); ?></td>
+    <td><?php echo $data->getjoindate(); ?></td>
+    <td><?php echo $data->getdateofbirth(); ?></td>
+</tr>
+<?php endforeach;?>
+</table>
